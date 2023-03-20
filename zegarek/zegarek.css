@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
+
+body {
+  background: linear-gradient(100deg, rgba(34,193,195,1) 0%, rgba(230,187,95,0.908000700280112) 100%);
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0%;
+  padding: 0%;
+  font-size: 30px;
+  text-shadow: 1px 2px rgba(0, 0, 0, 0.296);
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  font-size: 30px;
+  transform: translate(-50%, -50%);
+}
+#stop {
+  border-radius: 10px;
+  color: white;
+  box-shadow: 5px 5px rgba(0, 0, 0, 0.184);
+  font-size: 25px;
+  right: 65%;
+  position: absolute;
+  width: 250px;
+  height: 150px;
+  font-weight: bold;
+  text-shadow: 0 0 3px #10f8edac, 0 0 3px #c6e41cdc;  background: rgb(0, 255, 191);
+  background-color: rgba(72, 18, 134, 0.597);
+}
+#start {
+  border-radius: 10px;
+  box-shadow: 5px 5px rgba(0, 0, 0, 0.184);
+  color: white;
+  font-size: 25px;
+  left: 45%;
+  position: absolute;
+  width: 250px;
+  height: 150px;
+  font-weight: bold;
+  text-shadow: 0 0 3px #10f8edac, 0 0 3px #c6e41cdc;  background: rgb(0, 255, 191);
+  background-color: rgba(72, 18, 134, 0.597);
+}
+
+@keyframes tipsy {
+  0 {
+    transform: translateX(-50%) translateY(-50%) rotate(0deg);
+  }
+  100% {
+    transform: translateX(-50%) translateY(-50%) rotate(360deg);
+  }
+}
+
+
+a {
+  color: #00000080;
+  text-shadow: 0 20px 25px #2e2e31, 0 40px 60px #2e2e31;
+  font-size: 50px;
+  font-weight: bold;
+  text-decoration: none;
+  letter-spacing: -3px;
+  margin: 0;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+a:before,
+a:after {
+  content: '';
+  padding: .9em .4em;
+  position: absolute;
+  left: 50%;
+  width: 100%;
+  top: 50%;
+  display: block;
+  border: 15px solid rgb(136, 0, 255);
+  transform: translateX(-50%) translateY(-50%) rotate(0deg);
+  animation: 10s infinite alternate ease-in-out tipsy;
+}
+
+a:before {
+  border-color: #ff0000 #00f2ff rgba(183, 26, 26, 0.533) rgba(0, 0, 0, 0);
+  z-index: -1;
+}
+
+a:after {
+  border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #05de1e #c1c10f;
+  box-shadow: 25px 25px 25px rgba(46, 46, 49, .8);
+}
+
+
